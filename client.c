@@ -22,16 +22,12 @@ int main(){
         client_addr.sin_addr.s_addr =  INADDR_ANY; 
         client_addr.sin_port = htons(8888);
 
-    
-        //printf("yadav\n") ;
         if(connect(socket_id, (struct sockaddr*)&client_addr, sizeof(client_addr)) == 0){
-            //printf("sushant\n") ;
             system("gcc client_new.c -o client_new") ;
             system("./client_new") ;
             printf("enter 1.refresh 2.exit : ") ;
             scanf("%d" , &n) ;
             close(socket_id);
-            //write(socket_id , &n, sizeof(int));
         }
         else
             break ;
