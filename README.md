@@ -3,6 +3,7 @@ If the program is running, any code change in the executable file is directly re
 
 
 program flow :
+
 1.Client program generates the socket and meanwhile call the new_client program.
 
 2.Server connect to that socket and listen the request and meanwhile call the new_server.
